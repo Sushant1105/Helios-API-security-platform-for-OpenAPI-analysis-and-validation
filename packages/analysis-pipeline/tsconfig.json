@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+  "references": [
+    { "path": "../shared" },
+    { "path": "../canonical-ast" },
+    { "path": "../spec-parser" },
+    { "path": "../validator" },
+    { "path": "../security-engine" },
+    { "path": "../compliance-engine" },
+    { "path": "../diff-engine" },
+    { "path": "../sdk-generator" },
+    { "path": "../ai-engine" }
+  ],
+  "include": ["src/**/*"]
+}

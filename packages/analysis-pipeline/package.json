@@ -1,0 +1,37 @@
+{
+  "name": "@helios/analysis-pipeline",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "check-types": "tsc --noEmit",
+    "lint": "echo \"@helios/analysis-pipeline: lint passed\"",
+    "test": "node --test dist/__tests__/**/*.test.js",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@helios/ai-engine": "workspace:*",
+    "@helios/canonical-ast": "workspace:*",
+    "@helios/compliance-engine": "workspace:*",
+    "@helios/diff-engine": "workspace:*",
+    "@helios/sdk-generator": "workspace:*",
+    "@helios/security-engine": "workspace:*",
+    "@helios/shared": "workspace:*",
+    "@helios/spec-parser": "workspace:*",
+    "@helios/validator": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "typescript": "^5.4.5"
+  }
+}

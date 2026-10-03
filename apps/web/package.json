@@ -1,0 +1,41 @@
+{
+  "name": "@helios/web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@helios/ai-engine": "workspace:*",
+    "@helios/analysis-pipeline": "workspace:*",
+    "@helios/canonical-ast": "workspace:*",
+    "@helios/compliance-engine": "workspace:*",
+    "@helios/diff-engine": "workspace:*",
+    "@helios/persistence": "workspace:*",
+    "@helios/sdk-generator": "workspace:*",
+    "@helios/security-engine": "workspace:*",
+    "@helios/shared": "workspace:*",
+    "@helios/spec-parser": "workspace:*",
+    "@helios/validator": "workspace:*",
+    "@prisma/client": "^5.14.0",
+    "lucide-react": "^0.475.0",
+    "next": "^14.2.23",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.23",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.4.5"
+  }
+}

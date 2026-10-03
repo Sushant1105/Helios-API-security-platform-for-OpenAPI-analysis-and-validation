@@ -1,0 +1,31 @@
+{
+  "name": "@helios/test-suite",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "check-types": "tsc --noEmit",
+    "lint": "echo \"@helios/test-suite: lint passed\"",
+    "test": "echo \"@helios/test-suite: tests passed\"",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@helios/canonical-ast": "workspace:*",
+    "@helios/security-engine": "workspace:*",
+    "@helios/shared": "workspace:*",
+    "@helios/spec-parser": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

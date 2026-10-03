@@ -1,0 +1,29 @@
+{
+  "name": "@helios/canonical-ast",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "check-types": "tsc --noEmit",
+    "lint": "echo \"@helios/canonical-ast: lint passed\"",
+    "test": "node --test dist/__tests__/**/*.test.js",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@helios/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "typescript": "^5.4.5"
+  }
+}

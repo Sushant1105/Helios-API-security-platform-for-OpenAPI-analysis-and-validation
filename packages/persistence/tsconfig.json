@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+  "references": [
+    { "path": "../shared" },
+    { "path": "../canonical-ast" },
+    { "path": "../spec-parser" },
+    { "path": "../diff-engine" },
+    { "path": "../ai-engine" },
+    { "path": "../analysis-pipeline" }
+  ],
+  "include": ["src/**/*"]
+}
